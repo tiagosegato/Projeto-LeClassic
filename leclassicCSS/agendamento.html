@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Le Classic Pilates</title>
+    <meta name="author" content="Alessandra Ferro" />
+    <meta
+      name="keywords"
+      content="pilates,pilates clássico,pilates em Brasília,... "
+    />
+    <meta
+      name="description"
+      content="Pilates Clássico em Brasília com atendimento individualizado e personalizado"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="img/banner.png"
+        alt="aluna de pilates praticando o exercício tal no estudio de pilates"
+      />
+    </header>
+
+    <nav>
+      <a class="menu" href="index.html">HOME</a>
+      <a class="menu" href="index.html#pag-beneficios">BENEFÍCIOS</a>
+      <a class="menu" href="index.html#pag-caracteristicas">CARACTERÍSTICAS</a>
+      <a class="menu" href="index.html#pag-estudio">ESTÚDIO</a>
+      <a class="menu" href="#">AGENDAMENTOS</a>
+    </nav>
+
+    <section id="pag-agendamentos">
+      <h1>Agendamentos</h1>
+
+      <p>Agende uma aula experimental grátis agora mesmo.</p>
+
+      <!-- FORMULÁRIO -->
+      <form name="frm-agendamento" method="GET">
+        <label for="nome">Nome:</label>
+        <input
+          name="nome"
+          type="text"
+          maxlength="50"
+          placeholder="Nome Completo"
+          autofocus
+          required
+        />
+
+        <label for="email">E-mail:</label>
+        <input name="email" type="email" placeholder="usuario@email.com" />
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" placeholder="Somente números" />
+
+        <label for="celular">Celular:</label>
+        <input
+          type="tel"
+          name="celular"
+          placeholder="99-99999-9999"
+          pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+        />
+
+        <div class="container">
+          <div>
+            <label for="data">Data:</label>
+            <input type="date" name="data" />
+          </div>
+          <div>
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" />
+          </div>
+          <div>
+            <label for="aulas">Aulas:</label>
+            <input type="number" name="aulas" min="1" max="5" step="1" />
+          </div>
+        </div>
+
+        <label for="nivel">Nível:</label>
+        <select name="nivel">
+          <option value="">Selecione:</option>
+          <option value="basico">Básico</option>
+          <option value="intermediario">Intermediário</option>
+          <option value="avancado">Avançado</option>
+        </select>
+
+        <fieldset>
+          <legend>Gênero:</legend>
+          <input type="radio" name="genero" value="masc" />
+          <label for="masc">Masculino</label><br />
+          <input type="radio" name="genero" value="fem" />
+          <label for="fem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Atividades:</legend>
+          <input type="checkbox" name="atividades" value="corrida" />
+          <label for="corrida">Corrida</label><br />
+          <input type="checkbox" name="atividades" value="pilates" />
+          <label for="pilates">Pilates</label><br />
+          <input type="checkbox" name="atividades" value="yoga" />
+          <label for="yoga">Yoga</label><br />
+          <input type="checkbox" name="atividades" value="musculacao" />
+          <label for="musculacao">Musculação</label><br />
+        </fieldset>
+
+        <label for="msg">Mensagem:</label>
+        <textarea name="msg" rows="4"></textarea>
+
+        <input type="submit" name="btn-enviar" value="AGENDAR" />
+        <input type="reset" name="btn-cancelar" value="CANCELAR" />
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Desenvolvido por
+        <a href="http://tiagosegato.com" target="_blank">Tiago Segato</a> - 2025
+      </p>
+    </footer>
+  </body>
+</html>

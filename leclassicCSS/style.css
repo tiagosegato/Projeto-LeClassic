@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    background-color: #FFF;
+}
+
+header, #img-topo{
+    width: 100%;
+    background-color: #003A70;
+}
+
+nav{
+    width: 100%;
+    background-color: #003A70;
+    text-align: center;
+    padding: 2rem;
+}
+
+a{
+    font-family: "Familjen Grotesk", sans-serif;
+    text-decoration: none;
+}
+
+.menu:link, .menu:visited{
+    color: #FFF;
+    font-size: 1.5rem;
+    margin-right: 60px;
+}
+
+.menu:hover, .menu:active{
+    color:#C8B79D;
+}
+
+main, #pag-beneficios, #pag-caracteristicas, #pag-estudio, #pag-agendamentos{
+    padding: 100px;
+}
+
+h1{
+    font-family: "Abhaya Libre", serif;
+    font-size: 4rem;
+    color: #C8B79D;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+p, span{
+    font: 1.5rem "Familjen Grotesk", sans-serif;
+    color: #101820;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+#pag-beneficios{
+    background-color: #101820;
+}
+
+h2{
+    font-family: "Abhaya Libre", serif;
+    font-size: 3rem;
+    color: #C8B79D;
+    font-weight: 600;
+    margin-bottom: 2rem; 
+}
+
+#pag-beneficios p{
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+ul{
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-left: 70px;
+}
+
+li{
+    color: #FFF;
+    font: 1.5rem "Familjen Grotesk", sans-serif;
+    margin-bottom: 1rem;
+}
+
+#pag-caracteristicas{
+    background-color: #E9E7DF;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: #FFF;
+    width: 24%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #CCC;
+    transition: 2s;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 10px #888;
+}
+
+.img-caracteristicas{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-texto{
+    padding: 30px;
+}
+
+.card-texto p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+h3{
+    font-family: "Abhaya Libre", serif;
+    font-size: 2rem;
+    color: #003A70;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#pag-estudio{
+    background-color: #FFF;
+}
+
+#conteudo-estudio{
+    width: 800px;
+}
+
+.contatos{
+    margin-top: 2rem;
+}
+
+video{
+    width: 400px;
+}
+
+footer{
+    background-color: #101820;
+    padding: 20px;
+}
+
+footer p, footer a{
+    color: white;
+    text-align: center;
+}
+
+/* FORMULÁRIO */
+
+#pag-agendamentos{
+    background-color: #F0F0F0;
+}
+
+#pag-agendamentos p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form{
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #CCC;
+    width: 500px;
+    margin: 0 auto;
+}
+
+label, fieldset{
+    font: 1.5rem "Familjen Grotesk", sans-serif;
+    color: #101820;
+    font-weight: 400;
+}
+
+fieldset{
+     margin-bottom: 1rem;
+     padding: 0.5rem;
+}
+
+
+input, select, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font: 1.2rem "Familjen Grotesk", sans-serif;
+    color: #888;
+    border: 1px solid #C4C4C4;
+    margin-bottom: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: 30px;
+    margin-left: 70px;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color: #003A70;
+    border: none;
+    border-radius: 0.5rem;
+    color: #FFF;
+    width: 49%;
+}
+
+input[type="reset"]{
+    background-color: #F0F0F0;
+    color: #003A70;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+    box-shadow: 0 0 20px #777;
+}
